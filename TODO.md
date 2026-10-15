@@ -240,8 +240,8 @@ L0 車牌: 720x600 ocr=ABC-1234 候選=[A8C1234] → mismatch
         1.x 的 App 連不到後端，只剩腳本情境
       - App Store Connect：App ID 6821268978。內部群組「團隊內部」（自動分發每個
         build）；外部群組「公開測試」公開連結 <https://testflight.apple.com/join/XzGu4D5b>，
-        build 6 送 Beta 審核中。build 7 只多了 `NSLocationAlwaysAndWhenInUseUsageDescription`
-        （ITMS-90683 警告），核准後把 build 7 也加進「公開測試」
+        build 6 於 2026-10-16 前通過 Beta 審核，build 7（只多了
+        `NSLocationAlwaysAndWhenInUseUsageDescription`，ITMS-90683）2026-10-16 加進「公開測試」並立即核准
       - iOS 上傳：`flutter build ipa` 後用 `xcodebuild -exportArchive`（destination=upload、
         `-allowProvisioningUpdates`），走 Xcode 登入的帳號，不需要 API key
       - `pubspec.yaml` 是 `2.0.0+7`（Android Release 的 APK 是 +6 建的，versionCode 2006）
